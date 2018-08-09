@@ -19,6 +19,7 @@ attr_reader :name
   
   def close_account 
     self.status = "closed"
+  end
     
   
 end
