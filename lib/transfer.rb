@@ -32,7 +32,7 @@ attr_accessor :sender, :receiver, :status, :amount
        self.sender.balance += amount
        self.receiver.balance = self.receiver.balance - amount
        self.status = "reversed"
-      binding.pry
+      #binding.pry
        end
     end
   
