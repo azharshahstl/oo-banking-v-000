@@ -18,7 +18,7 @@ attr_accessor :sender, :receiver, :status, :amount
        self.sender.balance = self.sender.balance - amount 
        self.receiver.balance = self.receiver.balance + amount 
        self.status = "complete"
-     else 
+     else retun 
        
        
   
