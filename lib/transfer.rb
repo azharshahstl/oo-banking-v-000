@@ -28,8 +28,8 @@ attr_accessor :sender, :receiver, :status, :amount
        
     def reverse_transfer 
        if self.status = "complete" && self.receiver.balance > amount && self.valid? == true
-       self.receiver.balance += amount
-       self.sender.balance = self.sender.balance - amount
+       self.sender.balance += amount
+       self.receiver.balance = self.receiver.balance - amount
        self.status = "reversed"
        #binding.pry
        end
