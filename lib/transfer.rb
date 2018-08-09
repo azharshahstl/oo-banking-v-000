@@ -24,9 +24,10 @@ attr_accessor :sender, :receiver, :status, :amount
      end
    end
        
-     def reverse_transfer 
-       
-     end
+    def reverse_transfer 
+       self.sender.balance += amount
+       self.receiver.balance = self.receiver.balance - amount
+    end
   
     
 end
